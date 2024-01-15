@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Mailing Address:<input type="text" id="mAddress"><br>
+    <input type="checkbox" id="Checkbox" onclick="test()"> Same as Mailing Address<br>
+    Shipping Address:<input type="text" id="sAddress"><br>
+
+    <script>
+        function test(){
+            if(document.getElementById("Checkbox").checked){
+                document.getElementById("sAddress").value=document.getElementById("mAddress").value;
+            }
+        }
+    </script>
+</body>
+</html>
